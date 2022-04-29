@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/microgreens/static/css/main.578bc5dc.css",
+    "main.js": "/microgreens/static/js/main.a2f47e59.js",
+    "static/js/787.037aa8de.chunk.js": "/microgreens/static/js/787.037aa8de.chunk.js",
+    "static/media/35.png": "/microgreens/static/media/35.36486222398dfe5a3490.png",
+    "static/media/223.jpg": "/microgreens/static/media/223.1119273058787231bcd7.jpg",
+    "static/media/pngwing.com.png": "/microgreens/static/media/pngwing.com.36c518741c86daf08d62.png",
+    "static/media/134.jpg": "/microgreens/static/media/134.f8279951a13505596005.jpg",
+    "static/media/IMG_1377.jpg": "/microgreens/static/media/IMG_1377.9d90c42dedcf10dc4166.jpg",
+    "static/media/online-shopping1.jpg": "/microgreens/static/media/online-shopping1.060214a79cccfbc3a3f2.jpg",
+    "static/media/pngegg.png": "/microgreens/static/media/pngegg.dcdf02f865198e86fd06.png",
+    "static/media/can-you-freeze-microgreens1.jpg": "/microgreens/static/media/can-you-freeze-microgreens1.cb7080fbe15af36663da.jpg",
+    "static/media/email-support-services.jpg": "/microgreens/static/media/email-support-services.aa97efeb3d9936454b7e.jpg",
+    "static/media/t4.jpg": "/microgreens/static/media/t4.2ae89eb56b944c0c997a.jpg",
+    "index.html": "/microgreens/index.html",
+    "main.578bc5dc.css.map": "/microgreens/static/css/main.578bc5dc.css.map",
+    "main.a2f47e59.js.map": "/microgreens/static/js/main.a2f47e59.js.map",
+    "787.037aa8de.chunk.js.map": "/microgreens/static/js/787.037aa8de.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.578bc5dc.css",
+    "static/js/main.a2f47e59.js"
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/microgreens/static/css/main.a5a18fa4.css",
-    "main.js": "/microgreens/static/js/main.2845e32c.js",
+    "main.js": "/microgreens/static/js/main.a0d361c9.js",
     "static/js/787.037aa8de.chunk.js": "/microgreens/static/js/787.037aa8de.chunk.js",
     "static/media/35.png": "/microgreens/static/media/35.36486222398dfe5a3490.png",
     "static/media/223.jpg": "/microgreens/static/media/223.1119273058787231bcd7.jpg",
@@ -15,11 +15,11 @@
     "static/media/t4.jpg": "/microgreens/static/media/t4.2ae89eb56b944c0c997a.jpg",
     "index.html": "/microgreens/index.html",
     "main.a5a18fa4.css.map": "/microgreens/static/css/main.a5a18fa4.css.map",
-    "main.2845e32c.js.map": "/microgreens/static/js/main.2845e32c.js.map",
+    "main.a0d361c9.js.map": "/microgreens/static/js/main.a0d361c9.js.map",
     "787.037aa8de.chunk.js.map": "/microgreens/static/js/787.037aa8de.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5a18fa4.css",
-    "static/js/main.2845e32c.js"
+    "static/js/main.a0d361c9.js"
   ]
 }

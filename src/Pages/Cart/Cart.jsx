@@ -7,6 +7,7 @@ import {cartActions} from "../../Redux/Cart";
 function Cart(props) {
 
     const cart = useSelector(state => state.cart.order)
+    const orderTotalPrice = useSelector(state => state.cart.orderTotalPrice)
 
     const dispatch = useDispatch()
 
@@ -29,7 +30,7 @@ function Cart(props) {
                         {cart.map(el => <CartItem {...el}  addQty={addQty} decQty={decQty} delCart={delCart} /> )}
 
                         <div className='d-flex justify-content-around'>
-                            <p>Всего к оплате</p><p>{totalCartPrice} р</p>
+                            <p>Всего к оплате</p><p>{orderTotalPrice} р</p>
                         </div>
 
                             <button className='more-green mb-5 mt-1 d-block mx-auto'><Link to='/form'>

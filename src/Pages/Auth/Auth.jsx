@@ -1,9 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import {authActions, authActionTypes} from "../../Redux/Auth";
+import { authActionTypes} from "../../Redux/Auth";
 import {useDispatch, useSelector} from "react-redux";
 import './style.sass'
 import {MdDone} from "@react-icons/all-files/md/MdDone";
-import {useNavigate,Redirect} from "react-router-dom";
+import {useNavigate, Redirect, Link} from "react-router-dom";
+import Logo from "../../img/888.png";
+import {IoIosArrowBack} from "@react-icons/all-files/io/IoIosArrowBack";
+import {IoMdClose} from "@react-icons/all-files/io/IoMdClose";
 function Auth(props) {
 
 
@@ -29,8 +32,11 @@ function Auth(props) {
         navigate('/')
     },500)
     goToLoginPage()
+
+
     return (
         <div className='d-flex align-items-center justify-content-center box-cart p-5'>
+
             {
                 user ?
                     <>
@@ -41,11 +47,21 @@ function Auth(props) {
                     </>
                     :
                    <>
+
                        {
-                           toggle ? <div className='cart-mini_box p-4 mt-5'>
+                           toggle ? <div className='auth-box p-4 mt-5'>
+                               <div className='d-flex justify-content-around align-items-center'>
+                                 <span onClick={() => navigate(-1)} className='icon-box'>
+                                       <IoIosArrowBack className='auth-icon'/>
+                                 </span>
+                                   <img className='d-block mx-auto' src={Logo} alt=""/>
+                                   <span onClick={() => navigate(-1)} className='icon-box'>
+                                       <IoMdClose className='auth-icon'/>
+                                   </span>
+                               </div>
                                <h2 className='text-center form-name p-3'>Регстрация</h2>
                                <div className='row d-flex justify-content-center'>
-                                   <div className="col-8">
+                                   <div className="col-xl-8 col-12">
                                        <div className='w-100'>
                                            <input type="text" name="email" placeholder='Email' className='box-input w-100' onChange={e => setEmail(e.target.value)}/>
                                            <input type="text" name="password" placeholder='Пароль' className='box-input w-100' onChange={e => setPassword(e.target.value)}/> <br/>
@@ -61,10 +77,19 @@ function Auth(props) {
                                        Войти
                                    </p>
                                </div>
-                           </div> : <div className='cart-mini_box p-4 mt-5'>
+                           </div> : <div className='auth-box p-4 mt-5'>
+                               <div className='d-flex justify-content-around align-items-center'>
+                                 <span onClick={() => navigate(-1)} className='icon-box'>
+                                       <IoIosArrowBack className='auth-icon'/>
+                                 </span>
+                                   <img className='d-block mx-auto' src={Logo} alt=""/>
+                                   <span onClick={() => navigate(-1)} className='icon-box'>
+                                       <IoMdClose className='auth-icon'/>
+                                   </span>
+                               </div>
                                <h2 className='text-center form-name p-3'>Войти</h2>
                                <div className='row d-flex justify-content-center'>
-                                   <div className="col-8">
+                                   <div className="col-xl-8 col-12">
                                        <div className='w-100'>
                                            <input type="text" placeholder='Email' className='box-input w-100' onChange={e => setLoginEmail(e.target.value)}/>
                                            <input type="text" placeholder='Пароль' className='box-input w-100' onChange={e => setLoginPassword(e.target.value)}/> <br/>

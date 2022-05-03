@@ -13,8 +13,8 @@ function Work(props) {
 
                     <div className="col-xl-4">
                         <Image roundedCircle src={ImgThree} alt="" className='img-fluid img-work'/>
-                       <div className='w-50 float-end'>
-                           <p className='pt-2 work-card_title text-end'>Вы делаете заказ</p>
+                       <div className='w-50 float-end '>
+                           <p className='pt-2 work-card_title text-end work-line'>Вы делаете заказ</p>
                            <p className='work-card_text text-end'>Вы выбираете понравившиеся ва позиции, оплачиваете заказ.</p>
                        </div>
                     </div>
@@ -22,8 +22,8 @@ function Work(props) {
 
                     <div className="col-xl-4">
                         <Image roundedCircle src={ImgTwo} alt="" className='img-fluid img-work'/>
-                     <div className='w-50 float-end'>
-                         <p className='pt-2 work-card_title text-end'>Уточнение деталей</p>
+                     <div className='w-50 float-end '>
+                         <p className='pt-2 work-card_title text-end work-line'>Уточнение деталей</p>
                          <p className='work-card_text text-end'>Наш оператор связывается с вами в течении 30 мин.</p>
                      </div>
                     </div>
@@ -31,8 +31,8 @@ function Work(props) {
 
                     <div className="col-xl-4">
                         <Image roundedCircle src={ImgOne} alt="" className='img-fluid img-work' />
-                       <div className='w-50 float-end'>
-                           <p className='pt-2 work-card_title text-end'>Доставка</p>
+                       <div className='w-50 float-end '>
+                           <p className='pt-2 work-card_title text-end work-line '>Доставка</p>
                            <p className='work-card_text text-end'>Доставка осуществляется в течении 1-3 дней.</p>
                        </div>
                     </div>

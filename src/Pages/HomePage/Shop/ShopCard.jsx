@@ -12,37 +12,20 @@ function ShopCard(props) {
     return (
 
 
-       <div className='col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 text-center mb-5'>
-           <div className="containers">
-            <div className="cards">
-                <div className="imgBx">
-                    <img src={Ij}/>
+        <div className='col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 text-center mb-5'>
+
+                <div className=" products-card">
+                    <Link to={`/individualProducts/${id}`}>
+                    <img src={Ij} className='img-fluid p-3' alt=""/>
+                    <p className='products-name'>{name}</p>
+                    <p className='products-type'>микрозелень</p>
+                    <p className='products-type'>{gram} г / {price} р</p>
+                    </Link>
+                    <div className='buy-products p-3' onClick={() => addCart(name,id,img,gram,price, cell)}>
+                        Купить
+                    </div>
                 </div>
 
-                <div className="contentBx">
-
-                    <h2>{name}</h2>
-
-                    <div className="size">
-                        <h3>Грамм</h3>
-                        <span>50</span>
-                    </div>
-
-                    <div className="color">
-
-                        <h3>Цена</h3>
-                        <span>150р</span>
-
-                    </div>
-
-                        <button   className='more-green mb-5 mt-1 ' onClick={() => addCart(name,id,img,gram,price, cell)}>
-                            Купить
-                        </button>
-
-                </div>
-
-            </div>
-        </div>
         </div>
     );
 }

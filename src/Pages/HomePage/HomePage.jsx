@@ -19,7 +19,6 @@ function HomePage(props) {
             <Work />
             <Why />
             <Reviews />
-            <Farm />
             <Contacts />
         </>
     );

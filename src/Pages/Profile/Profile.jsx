@@ -29,7 +29,7 @@ function Profile(props) {
                     <Col sm={9} className='profile-content mt-5'>
                         <Tab.Content>
                             <Tab.Pane eventKey="Profile">
-                                <div className="row d-flex align-items-center">
+                                <div className="row d-flex align-items-center justify-content-center">
                                     <div className="col-xl-3 col-10 d-flex justify-content-center">
                                         <div className='text-center'>
                                             <img src={Avatar} className='avatar img-fluid p-5'  alt="" />

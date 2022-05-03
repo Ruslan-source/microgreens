@@ -9,12 +9,12 @@ import {AiOutlineInstagram} from "@react-icons/all-files/ai/AiOutlineInstagram";
 function Contacts(props) {
     return (
       <div className='container d-flex justify-content-center align-items-center'>
-          <div className='row p-5'>
+          <div className='row p-5 '>
               <h3 className='text-center mb-5'>Контакты</h3>
               <div className="col-1">
                   <img src={Vetca} alt="" className='img-fluid vetka'/>
               </div>
-              <div className="col-4 d-flex align-items-center justify-content-center contacts-box">
+              <div className="col-xl-4 col-12 d-flex align-items-center justify-content-center contacts-box mb-2">
                   <div className='p-2'>
                       <h4>Свяжитесь с нами</h4>
                       <p><AiOutlinePhone />+7 800 555 35 35</p>
@@ -25,7 +25,7 @@ function Contacts(props) {
 
                   </div>
               </div>
-              <div className="col-7">
+              <div className="col-xl-7 col-12">
                   <YMaps>
                       <div>
                           <Map className='map' defaultState={{ center: [48.7121,44.5259], zoom: 12 }} />

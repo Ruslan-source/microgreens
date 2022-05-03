@@ -10,7 +10,7 @@ function Present(props) {
             </div>
             <div className="col-xl-6 col-sm-12 col-lg-12 col-12 m-0 p-0 d-flex align-items-center justify-content-center present-text">
                 <div className='p-5'>
-                    <h3 className='present-title'>О нашей ферме</h3>
+                    <h3 className='present-title'><span className='bg-bukva '>О</span>нашей ферме</h3>
                     <p className='present-text' >
                         Наша ферма имеет возможность производить <br/> различные сорта микрозелени наивысшего качества. <br/> Специальные лампы позволяют нам
                       в короткий срок <br/> получить готовую зелень и что самое главное <br/>  мы не используем никаких посторонних добавок. <br/> Почва тело и свет наш единственный секрет.

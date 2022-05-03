@@ -30,28 +30,40 @@ function Navigation() {
 
 
     return (
-        <div className='container-fluid navigation position-absolute'>
+
+
+
+
+
+
+
+
+
+            <Navbar collapseOnSelect expand="lg" className='navigation' >
             <Container>
-                <Navbar collapseOnSelect expand="lg" >
+
                     <Navbar.Brand as={Link} to='/'><img src={Logo} alt=""/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto">
+                    <Navbar.Collapse id="responsive-navbar-nav " className='text-end'>
+                        <Nav className="me-auto ">
                         </Nav>
+
                         <Nav>
                             {
                                 navItems.map(el => {
-                                    return <Nav.Link as={Link} to={el.link}>{el.name}</Nav.Link>
+                                    return <Nav.Link  as={Link} href='#' to={el.link}>{el.name}</Nav.Link>
                                 })
                             }
-                            <Nav.Link as={Link} to={user ? '/profile' : '/auth'}><CgProfile style={{fontSize: '20px'}}/></Nav.Link>
-                            <Nav.Link as={Link} to='/cart'><TiShoppingCart style={{fontSize: '20px'}}/>{bageInfo}</Nav.Link>
+                            <Nav.Link as={Link} href='#' to={user ? '/profile' : '/auth'}><CgProfile style={{fontSize: '20px'}}/></Nav.Link>
+                            <Nav.Link as={Link} href='#' to='/cart'><TiShoppingCart style={{fontSize: '20px'}}/>{bageInfo}</Nav.Link>
 
                         </Nav>
+
                     </Navbar.Collapse>
-                </Navbar>
+
             </Container>
-        </div>
+            </Navbar>
+
     );
 }
 
